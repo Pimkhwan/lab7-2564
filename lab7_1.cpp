@@ -15,27 +15,40 @@ string func1(string x){
 
 string func2(string x){
 	int i = 0, L = x.size();
-	string y = "";
+	string u = "";
 	while(i < L){
-		y += toupper(x[i]);
+		u += toupper(x[i]);
 		i++;
 	}
-	return y;	
+	return u;	
 }
 
 string func3(string x){
 	int i = 0, L = x.size();
-	string y = "";
+	string z = "";
 	while(i < L){
-		y += tolower(x[i]);
+		z += tolower(x[i]);
 		i++;
 	}
-	return y;	
+	return z;	
 }
 
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+	string x;
+	string y;
+	string z;
+	string u;
+    cout << "Input text: " ;
+	cin >> x;
+    cout << "Reversed text: " << func1(x) << "\n";
+	string func2(x);
+	string func3(x);
+
+	if(u==z){
+				cout << "Palindrome: " << "Yes";
+	}
+	else{
+		cout << "Palindrome: " << "No";
+	}
     return 0;
 }
